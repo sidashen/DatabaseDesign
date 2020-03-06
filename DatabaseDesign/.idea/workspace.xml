@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/Close.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/ConnectionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TW-homework/Java_Mysql/.idea/Java_Mysql.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/ConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +44,43 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.thoughtworks.jdbc" />
     </key>
+  </component>
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.Application" />
+      <module name="DatabaseDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectionTest.query" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.jdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thoughtworks.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.jdbc.ConnectionTest" />
+      <option name="METHOD_NAME" value="query" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.ConnectionTest.query" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -97,6 +129,26 @@
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="473" y="100" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1583495451037" />
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583497758611">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583497758611" />
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1583497587216" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583497758610">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583497758610" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1583497587215" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583497758610">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583497758610" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1583497587214" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583497758611">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583497758611" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1583497587215" />
     <state x="552" y="406" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583497133189">
       <screen x="0" y="23" width="1680" height="963" />
     </state>

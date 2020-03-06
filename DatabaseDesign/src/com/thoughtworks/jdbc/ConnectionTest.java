@@ -21,7 +21,6 @@ public class ConnectionTest {
     info.setProperty("user", "root");
     info.setProperty("password", "");
     Connection conn = driver.connect(url, info);
-    System.out.println(conn);
     String sql = "SELECT id, name, age, gender FROM student_info";
     PreparedStatement ps = conn.prepareStatement(sql);
     ResultSet resultSet = ps.executeQuery();
