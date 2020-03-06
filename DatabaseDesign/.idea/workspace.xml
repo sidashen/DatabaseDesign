@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Back-end.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DatabaseDesign.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GrowthNote-web/src/main/resources/static/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../JavaOOP.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/2018-03-22-08-29-26-1521707366/.idea/workspace.xml" afterDir="false" />
@@ -21,7 +15,6 @@
       <change afterPath="$PROJECT_DIR$/../TW-homework/JDBC/JDBC.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/JDBC/src/Close.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/JDBC/src/ConnectionDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TW-homework/JDBC/src/ConnectionQuery.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/JDBC/src/ConnectionTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/Java_Mysql/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/Java_Mysql/.idea/libraries/mysql_connector_java_5_1_48_bin.xml" afterDir="false" />
@@ -30,6 +23,8 @@
       <change afterPath="$PROJECT_DIR$/../TW-homework/Java_Mysql/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../TW-homework/Java_Mysql/JDBC_demo.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../src/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +66,14 @@
       <option name="presentableId" value="Default" />
       <updated>1583494943294</updated>
     </task>
+    <task id="LOCAL-00001" summary="[shasha] feat: create manager and teacher classes">
+      <created>1583495451444</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583495451444</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,10 +87,18 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[shasha] feat: create manager and teacher classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="[shasha] feat: create manager and teacher classes" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="440" y="168" key="#Project_Structure" timestamp="1583494981942">
       <screen x="0" y="23" width="1680" height="966" />
     </state>
     <state x="440" y="168" key="#Project_Structure/0.23.1680.966@0.23.1680.966" timestamp="1583494981942" />
+    <state x="473" y="100" key="CommitChangelistDialog2" timestamp="1583495451037">
+      <screen x="0" y="23" width="1680" height="967" />
+    </state>
+    <state x="473" y="100" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1583495451037" />
   </component>
 </project>
