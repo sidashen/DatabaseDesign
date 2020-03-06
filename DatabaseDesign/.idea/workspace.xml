@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/utils/JDBCUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/ConnectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/entities/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Teacher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/Close.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/utils/Close.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/jdbc/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/utils/ConnectionTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,12 +65,12 @@
       <module name="DatabaseDesign" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.thoughtworks.jdbc.*" />
+          <option name="PATTERN" value="com.thoughtworks.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.thoughtworks.jdbc" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.jdbc.ConnectionTest" />
+      <option name="PACKAGE_NAME" value="com.thoughtworks.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.utils.ConnectionTest" />
       <option name="METHOD_NAME" value="query" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
