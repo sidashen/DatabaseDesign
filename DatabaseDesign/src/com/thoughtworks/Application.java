@@ -1,4 +1,4 @@
 package com.thoughtworks;
 
-public class Manager {
+public class Application {
 }
