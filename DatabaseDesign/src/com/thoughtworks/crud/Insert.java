@@ -45,7 +45,7 @@ public class Insert {
         name = infoList.get(1).substring(4);
         age = Integer.parseInt(infoList.get(2).substring(4));
         gender = infoList.get(3).substring(4);
-        sql = "insert into student_info values (?, ?, ?, ?)";
+        sql = "insert into teacher_info values (?, ?, ?, ?)";
         insertCount = PreparedStatementUpdate.update(sql, id, name, age, gender);
         if (insertCount > 0) {
           System.out.println("添加成功");

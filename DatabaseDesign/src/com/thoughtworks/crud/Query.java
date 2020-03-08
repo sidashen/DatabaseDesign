@@ -83,7 +83,7 @@ public class Query {
       case "2.":
         System.out.println("请输入教师姓名");
         teacherName = scanner.nextLine();
-        sql = "select name, id, age, gender from student_info where name = ?";
+        sql = "select name, id, age, gender from teacher_info where name = ?";
         teacherList = PreparedStatementQuery.queryInfoList(Teacher.class, sql, teacherName);
         assert teacherList != null;
         teacherList.forEach(System.out::println);
