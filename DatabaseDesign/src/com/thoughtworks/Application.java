@@ -67,8 +67,9 @@ public class Application {
       instruction = scanner.nextLine();
     }
 
-    
-    queryInfo(instruction, scanner);
+    if (instruction.substring(0, 3).equals("1.1")) {
+      queryInfo(instruction, scanner);
+    }
   }
 
   public static Boolean isCorrectFormat(String input) {
@@ -83,6 +84,7 @@ public class Application {
       case "1.1.1":
         String sql = "select id, name, age, gender from student_info";
         List<Student> list = PreparedStatementQuery.queryInfoList(Student.class, sql);
+        assert list != null;
         list.forEach(System.out::println);
         break;
       case "1.1.2":
@@ -90,10 +92,12 @@ public class Application {
         String studentName = scanner.nextLine();
         String sql1 = "select name, id, age, gender from student_info where name = ?";
         List<Student> studentList = PreparedStatementQuery.queryInfoList(Student.class, sql1, studentName);
+        assert studentList != null;
         studentList.forEach(System.out::println);
         String sql2 = "select score, subject_id subjectId, student_name studentName " +
                       "from score_info where student_name = ?";
         List<Score> scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql2, studentName);
+        assert scoreList != null;
         scoreList.forEach(System.out::println);
         break;
       case "1.1.3":
@@ -102,6 +106,7 @@ public class Application {
         sql = "select student_id studentId, student_name studentName, score from score_info " +
           "where subject_id = (select id from subject_info where teacher = ?)";
         scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql, teacherName);
+        assert scoreList != null;
         scoreList.forEach(System.out::println);
         break;
       case "1.1.4":
