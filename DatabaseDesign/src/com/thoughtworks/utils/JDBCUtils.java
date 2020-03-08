@@ -18,7 +18,7 @@ public class JDBCUtils {
     return conn;
   }
 
-  public void closeResource(Connection conn, Statement st) {
+  public static void closeResource(Connection conn, Statement st) {
     if (st != null) {
       try {
         st.close();
