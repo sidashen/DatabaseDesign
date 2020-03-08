@@ -23,7 +23,7 @@ public class PreparedStatementQuery {
   }
 
   //多条记录
-  public <T> List<T> queryInfoList(Class<T> clazz, String sql, Object ...args) {
+  public static <T> List<T> queryInfoList(Class<T> clazz, String sql, Object... args) {
     Connection conn = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
