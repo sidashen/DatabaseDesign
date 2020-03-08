@@ -1,13 +1,9 @@
 package com.thoughtworks;
 
-import com.thoughtworks.crud.Query;
 import com.thoughtworks.entities.*;
-import com.thoughtworks.preparedstatement.crud.PreparedStatementQuery;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Application {
 
