@@ -8,7 +8,7 @@ import java.sql.PreparedStatement;
 
 public class PreparedStatementUpdate {
 
-  public int update(String sql, Object ...args) {//sql中占位符的个数与可变形参的长度一致
+  public static int update(String sql, Object ...args) {//sql中占位符的个数与可变形参的长度一致
     Connection conn = null;
     PreparedStatement ps = null;
     try {

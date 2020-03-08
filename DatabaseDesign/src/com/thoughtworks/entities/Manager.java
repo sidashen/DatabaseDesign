@@ -1,6 +1,7 @@
 package com.thoughtworks.entities;
 
 import com.thoughtworks.Application;
+import com.thoughtworks.crud.Insert;
 import com.thoughtworks.crud.Query;
 
 import java.util.Scanner;
@@ -110,6 +111,7 @@ public class Manager {
         break;
       case "2.":
         Query.queryInfo(instruction, scanner);
+        Insert.insertInfo(instruction, scanner);
     }
   }
 }

@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/Application.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/crud/Insert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/preparedstatement/crud/PreparedStatementUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/preparedstatement/crud/PreparedStatementUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Insert.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thoughtworks.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.crud.Insert" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PreparedStatementQuery.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DatabaseDesign" />
       <extension name="coverage">
@@ -111,6 +129,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.Insert.test" />
         <item itemvalue="JUnit.PreparedStatementQuery.test" />
         <item itemvalue="JUnit.PreparedStatementUpdate.updateTest" />
         <item itemvalue="JUnit.ConnectionTest.query" />
@@ -174,46 +193,50 @@
       <screen x="0" y="23" width="1680" height="961" />
     </state>
     <state x="331" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.961@0.23.1680.961" timestamp="1583658362737" />
+    <state x="578" y="257" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1583689895980">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="578" y="257" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.23.1680.961@0.23.1680.961" timestamp="1583689895980" />
     <state x="473" y="100" key="CommitChangelistDialog2" timestamp="1583495451037">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="473" y="100" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1583495451037" />
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583688621098">
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583691206104">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583688621098" />
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583691206104" />
     <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1583673541816" />
-    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583688621097">
+    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583691206103">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583688621097" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583691206103" />
     <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1583673541815" />
-    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583688621096">
+    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583691206102">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583688621096" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583691206102" />
     <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1583673541814" />
-    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583688621098">
+    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583691206103">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583688621098" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583691206103" />
     <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1583673541815" />
-    <state width="1638" height="319" key="GridCell.Tab.1.bottom" timestamp="1583686590336">
+    <state width="1638" height="319" key="GridCell.Tab.1.bottom" timestamp="1583690390452">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583686590336" />
-    <state width="1638" height="319" key="GridCell.Tab.1.center" timestamp="1583686590335">
+    <state width="1638" height="319" key="GridCell.Tab.1.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583690390452" />
+    <state width="1638" height="319" key="GridCell.Tab.1.center" timestamp="1583690390451">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.center/0.23.1680.961@0.23.1680.961" timestamp="1583686590335" />
-    <state width="1638" height="319" key="GridCell.Tab.1.left" timestamp="1583686590335">
+    <state width="1638" height="319" key="GridCell.Tab.1.center/0.23.1680.961@0.23.1680.961" timestamp="1583690390451" />
+    <state width="1638" height="319" key="GridCell.Tab.1.left" timestamp="1583690390451">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.left/0.23.1680.961@0.23.1680.961" timestamp="1583686590335" />
-    <state width="1638" height="319" key="GridCell.Tab.1.right" timestamp="1583686590336">
+    <state width="1638" height="319" key="GridCell.Tab.1.left/0.23.1680.961@0.23.1680.961" timestamp="1583690390451" />
+    <state width="1638" height="319" key="GridCell.Tab.1.right" timestamp="1583690390452">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="319" key="GridCell.Tab.1.right/0.23.1680.961@0.23.1680.961" timestamp="1583686590336" />
+    <state width="1638" height="319" key="GridCell.Tab.1.right/0.23.1680.961@0.23.1680.961" timestamp="1583690390452" />
     <state x="100" y="123" width="1480" height="761" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1583686001721">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
