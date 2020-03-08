@@ -3,6 +3,7 @@ package com.thoughtworks;
 import com.thoughtworks.entities.Score;
 import com.thoughtworks.entities.Student;
 import com.thoughtworks.entities.Subject;
+import com.thoughtworks.entities.Teacher;
 import com.thoughtworks.preparedstatement.crud.PreparedStatementQuery;
 import java.util.Arrays;
 import java.util.List;
@@ -138,13 +139,27 @@ public class Application {
         subjectList.forEach(System.out::println);
         break;
       case "1.2.3":
-        System.out.println("请输入教师名字");
+        System.out.println("请输入教师姓名");
         teacherName = scanner.nextLine();
         sql = "select id subjectId, subject_name subjectName, teacher teacherName " +
           "from subject_info where teacher = ?";
         subjectList = PreparedStatementQuery.queryInfoList(Subject.class, sql, teacherName);
         assert subjectList != null;
         subjectList.forEach(System.out::println);
+        break;
+      case "1.":
+        sql = "select id, name, age, gender from teacher_info";
+        List<Teacher> teacherList = PreparedStatementQuery.queryInfoList(Teacher.class, sql);
+        assert teacherList != null;
+        teacherList.forEach(System.out::println);
+        break;
+      case "2.":
+        System.out.println("请输入教师姓名");
+        teacherName = scanner.nextLine();
+        sql = "select name, id, age, gender from student_info where name = ?";
+        teacherList = PreparedStatementQuery.queryInfoList(Teacher.class, sql, teacherName);
+        assert teacherList != null;
+        teacherList.forEach(System.out::println);
         break;
     }
   }
