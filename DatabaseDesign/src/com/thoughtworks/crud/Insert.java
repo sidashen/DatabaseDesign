@@ -28,7 +28,7 @@ public class Insert {
         System.out.println("请输入课程信息(例如：编号：1001, 名称: 计算机, 老师: 王老师)：");
         infoList = Arrays.asList(scanner.nextLine().split(","));
         int subjectId = Integer.parseInt(infoList.get(0).substring(3));
-        String subjectName = infoList.get(1).substring(4);
+        String subjectName = infoList.get(1).substring(3);
         String teacherName = infoList.get(2).substring(4);
         sql = "insert into subject_info values (?, ?, ?)";
         insertCount = PreparedStatementUpdate.update(sql, subjectId, subjectName, teacherName);
@@ -47,6 +47,21 @@ public class Insert {
         gender = infoList.get(3).substring(4);
         sql = "insert into student_info values (?, ?, ?, ?)";
         insertCount = PreparedStatementUpdate.update(sql, id, name, age, gender);
+        if (insertCount > 0) {
+          System.out.println("添加成功");
+        } else {
+          System.out.println("添加失败");
+        }
+        break;
+      case "2.4":
+        System.out.println("请输入学生信息(例如：学号: 20001, 编号: 1001, 姓名: 小明, 成绩: 80)：");
+        infoList = Arrays.asList(scanner.nextLine().split(","));
+        int studentId = Integer.parseInt(infoList.get(0).substring(3));
+        subjectId = Integer.parseInt(infoList.get(1).substring(4));
+        String studentName = infoList.get(2).substring(4);
+        float score = Float.parseFloat(infoList.get(1).substring(4));
+        sql = "insert into score_info values (?, ?, ?, ?)";
+        insertCount = PreparedStatementUpdate.update(sql, studentId, subjectId, studentName, score);
         if (insertCount > 0) {
           System.out.println("添加成功");
         } else {
