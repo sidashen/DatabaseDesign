@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/entities/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/preparedstatement/crud/PreparedStatementQuery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Score.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Score.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Subject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Subject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Teacher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/utils/JDBCUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/utils/JDBCUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/preparedstatement/crud/PreparedStatementUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/preparedstatement/crud/PreparedStatementUpdate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/utils/JDBCUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/utils/JDBCUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +52,7 @@
       <recent name="com.thoughtworks.jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PreparedStatementUpdate.updateTest">
+  <component name="RunManager" selected="JUnit.PreparedStatementQuery.test">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thoughtworks.Application" />
       <module name="DatabaseDesign" />
@@ -73,6 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PreparedStatementQuery.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="DatabaseDesign" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thoughtworks.preparedstatement.crud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.thoughtworks.preparedstatement.crud" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.preparedstatement.crud.PreparedStatementQuery" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PreparedStatementUpdate.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DatabaseDesign" />
       <extension name="coverage">
@@ -91,6 +116,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PreparedStatementQuery.test" />
         <item itemvalue="JUnit.PreparedStatementUpdate.updateTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.ConnectionTest.query" />
@@ -149,30 +175,34 @@
     </state>
     <state x="653" y="226" key="#com.intellij.ide.util.MemberChooser/0.23.1680.961@0.23.1680.961" timestamp="1583656347433" />
     <state x="653" y="226" key="#com.intellij.ide.util.MemberChooser/0.23.1680.963@0.23.1680.963" timestamp="1583504062861" />
+    <state x="331" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583658362737">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
+    <state x="331" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.961@0.23.1680.961" timestamp="1583658362737" />
     <state x="473" y="100" key="CommitChangelistDialog2" timestamp="1583495451037">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="473" y="100" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1583495451037" />
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583643116815">
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583664597870">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583643116815" />
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1583643029440" />
-    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583643116814">
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583664597870" />
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1583664475416" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583664597868">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583643116814" />
-    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1583643029439" />
-    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583643116813">
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583664597868" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1583664475415" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583664597868">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583643116813" />
-    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1583643029439" />
-    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583643116814">
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583664597868" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1583664475414" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583664597869">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583643116814" />
-    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1583643029440" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583664597869" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1583664475415" />
     <state x="552" y="406" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583497133189">
       <screen x="0" y="23" width="1680" height="963" />
     </state>

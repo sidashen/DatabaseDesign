@@ -1,9 +1,6 @@
 package com.thoughtworks.utils;
 
-import java.sql.Connection;
-import java.sql.Driver;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Properties;
 
 public class JDBCUtils {
@@ -32,6 +29,32 @@ public class JDBCUtils {
         conn.close();
       } catch (SQLException var4) {
         var4.printStackTrace();
+      }
+    }
+  }
+
+  public static void closeResource(Connection conn, Statement st, ResultSet rs) {
+    if (st != null) {
+      try {
+        st.close();
+      } catch (SQLException var5) {
+        var5.printStackTrace();
+      }
+    }
+
+    if (conn != null) {
+      try {
+        conn.close();
+      } catch (SQLException var4) {
+        var4.printStackTrace();
+      }
+    }
+
+    if (rs != null) {   // 关闭记录集
+      try {
+        rs.close();
+      } catch (SQLException e) {
+        e.printStackTrace();
       }
     }
   }

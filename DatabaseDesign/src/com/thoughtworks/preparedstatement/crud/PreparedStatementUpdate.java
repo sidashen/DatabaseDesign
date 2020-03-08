@@ -20,8 +20,9 @@ public class PreparedStatementUpdate {
       ps.execute();
     } catch (Exception e) {
       e.printStackTrace();
+    } finally {
+      JDBCUtils.closeResource(conn, ps);
     }
-    JDBCUtils.closeResource(conn, ps);
   }
 
 }
