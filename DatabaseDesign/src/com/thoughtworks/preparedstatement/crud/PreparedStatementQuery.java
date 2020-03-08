@@ -17,8 +17,9 @@ public class PreparedStatementQuery {
 
   @Test
   public void test() {
-    String sql = "select id, name, age, gender from student_info where id = ?";
-    List<Student> list = queryInfoList(Student.class, sql, 20001);
+    String sql = "select student_id studentId, score from score_info " +
+      "where subject_id = (select id from subject_info where teacher = ?)";
+    List<Score> list = queryInfoList(Score.class, sql, "王老师");
     list.forEach(System.out::println);
   }
 
@@ -45,8 +46,6 @@ public class PreparedStatementQuery {
         for (int i = 0; i < columnCount; i ++) {
           //获取列值
           Object columnValue = rs.getObject(i + 1);
-          //获取每个列的列名
-          // String columnName = rsmd.getColumnName(i + 1);
           //获取每个列的别名
           String columnLabel = rsmd.getColumnLabel(i + 1);
           //给score指定的属性赋值，通过反射

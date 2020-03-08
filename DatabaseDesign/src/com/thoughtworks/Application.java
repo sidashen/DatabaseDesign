@@ -1,11 +1,8 @@
 package com.thoughtworks;
 
+import com.thoughtworks.entities.Score;
 import com.thoughtworks.entities.Student;
 import com.thoughtworks.preparedstatement.crud.PreparedStatementQuery;
-import com.thoughtworks.utils.JDBCUtils;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -70,11 +67,7 @@ public class Application {
       instruction = scanner.nextLine();
     }
 
-    if ("1.1.1".equals(instruction)) {
-      String sql = "select id, name, age, gender from student_info";
-      List<Student> list = PreparedStatementQuery.queryInfoList(Student.class, sql);
-      list.forEach(System.out::println);
-    }
+    operation(instruction, scanner);
   }
 
   public static Boolean isCorrectFormat(String input) {
@@ -83,5 +76,34 @@ public class Application {
     Matcher mat = pat.matcher(input);
     return mat.find();
   }
+
+  public static void operation(String instruction, Scanner scanner) {
+    switch (instruction) {
+      case "1.1.1":
+        String sql = "select id, name, age, gender from student_info";
+        List<Student> list = PreparedStatementQuery.queryInfoList(Student.class, sql);
+        list.forEach(System.out::println);
+        break;
+      case "1.1.2":
+        System.out.println("请输入学生姓名");
+        String studentName = scanner.nextLine();
+        String sql1 = "select name, id, age, gender from student_info where name = ?";
+        List<Student> studentList = PreparedStatementQuery.queryInfoList(Student.class, sql1, studentName);
+        studentList.forEach(System.out::println);
+        String sql2 = "select score, subject_id subjectId, student_name studentName " +
+                      "from score_info where student_name = ?";
+        List<Score> scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql2, studentName);
+        scoreList.forEach(System.out::println);
+        break;
+      case "1.1.3":
+        System.out.println("请输入老师姓名");
+        String teacherName = scanner.nextLine();
+        sql = "select student_id studentId, student_name studentName, score from score_info " +
+          "where subject_id = (select id from subject_info where teacher = ?)";
+        scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql, teacherName);
+        scoreList.forEach(System.out::println);
+    }
+  }
+
 
 }
