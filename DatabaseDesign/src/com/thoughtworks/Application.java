@@ -2,6 +2,7 @@ package com.thoughtworks;
 
 import com.thoughtworks.entities.Score;
 import com.thoughtworks.entities.Student;
+import com.thoughtworks.entities.Subject;
 import com.thoughtworks.preparedstatement.crud.PreparedStatementQuery;
 import java.util.Arrays;
 import java.util.List;
@@ -67,8 +68,11 @@ public class Application {
       instruction = scanner.nextLine();
     }
 
-    if (instruction.substring(0, 3).equals("1.1")) {
-      queryInfo(instruction, scanner);
+
+    switch (instruction.substring(0, 2)) {
+      case "1.":
+        queryInfo(instruction, scanner);
+        break;
     }
   }
 
@@ -117,6 +121,21 @@ public class Application {
         scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql, subjectName);
         assert scoreList != null;
         scoreList.forEach(System.out::println);
+        break;
+      case "1.2.1":
+        sql = "select id subjectId, subject_name subjectName, teacher teacherName from subject_info";
+        List<Subject> subjectList = PreparedStatementQuery.queryInfoList(Subject.class, sql);
+        assert subjectList != null;
+        subjectList.forEach(System.out::println);
+        break;
+      case "1.2.2":
+        System.out.println("请输入科目名称");
+        subjectName = scanner.nextLine();
+        sql = "select id subjectId, subject_name subjectName, teacher teacherName " +
+          "from subject_info where subject_name = ?";
+        subjectList = PreparedStatementQuery.queryInfoList(Subject.class, sql, subjectName);
+        assert subjectList != null;
+        subjectList.forEach(System.out::println);
         break;
     }
   }

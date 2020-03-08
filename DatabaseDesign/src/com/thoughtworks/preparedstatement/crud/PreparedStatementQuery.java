@@ -2,6 +2,7 @@ package com.thoughtworks.preparedstatement.crud;
 
 import com.thoughtworks.entities.Score;
 import com.thoughtworks.entities.Student;
+import com.thoughtworks.entities.Subject;
 import com.thoughtworks.utils.JDBCUtils;
 import org.junit.Test;
 
@@ -17,8 +18,8 @@ public class PreparedStatementQuery {
 
   @Test
   public void test() {
-    String sql = "select student_id studentId, subject_id subjectId, student_name studentName, score from score_info where subject_id = ?";
-    List<Score> list = queryInfoList(Score.class, sql, 1001);
+    String sql = "select id subjectId, subject_name subjectName, teacher teacherName from subject_info";
+    List<Subject> list = queryInfoList(Subject.class, sql);
     list.forEach(System.out::println);
   }
 
