@@ -31,12 +31,7 @@ public class Application {
     }
   }
 
-  public static Boolean isCorrectFormat(String input) {
-    String rexp = "(\\d{1,4}\\.|\\d{1,4}\\.\\d{1,4}|\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})";
-    Pattern pat = Pattern.compile(rexp);
-    Matcher mat = pat.matcher(input);
-    return mat.find();
-  }
+
 
 
 }

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/crud/Query.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" afterDir="false" />
     </list>
@@ -179,25 +178,25 @@
       <screen x="0" y="23" width="1680" height="967" />
     </state>
     <state x="473" y="100" key="CommitChangelistDialog2/0.23.1680.967@0.23.1680.967" timestamp="1583495451037" />
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583688064756">
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom" timestamp="1583688621098">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583688064756" />
+    <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.961@0.23.1680.961" timestamp="1583688621098" />
     <state width="1638" height="258" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1583673541816" />
-    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583688064756">
+    <state width="1638" height="258" key="GridCell.Tab.0.center" timestamp="1583688621097">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583688064756" />
+    <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.961@0.23.1680.961" timestamp="1583688621097" />
     <state width="1638" height="258" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1583673541815" />
-    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583688064755">
+    <state width="1638" height="258" key="GridCell.Tab.0.left" timestamp="1583688621096">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583688064755" />
+    <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.961@0.23.1680.961" timestamp="1583688621096" />
     <state width="1638" height="258" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1583673541814" />
-    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583688064756">
+    <state width="1638" height="258" key="GridCell.Tab.0.right" timestamp="1583688621098">
       <screen x="0" y="23" width="1680" height="961" />
     </state>
-    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583688064756" />
+    <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.961@0.23.1680.961" timestamp="1583688621098" />
     <state width="1638" height="258" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1583673541815" />
     <state width="1638" height="319" key="GridCell.Tab.1.bottom" timestamp="1583686590336">
       <screen x="0" y="23" width="1680" height="961" />

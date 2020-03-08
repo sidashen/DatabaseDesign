@@ -4,6 +4,8 @@ import com.thoughtworks.Application;
 import com.thoughtworks.crud.Query;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Manager {
   private int id;
@@ -59,6 +61,13 @@ public class Manager {
       " 管理者年龄：" + this.age + " 管理者性别：" + this.gender;
   }
 
+  public static Boolean isCorrectFormat(String input) {
+    String rexp = "(\\d{1,4}\\.|\\d{1,4}\\.\\d{1,4}|\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})";
+    Pattern pat = Pattern.compile(rexp);
+    Matcher mat = pat.matcher(input);
+    return mat.find();
+  }
+
   public static void managerFunction() {
     System.out.println("您好，超级管理员，请选择你需要进行的操作：\n" +
       "1. 查询\n" +
@@ -90,11 +99,11 @@ public class Manager {
       "\t4.3 删除指定老师");
     Scanner scanner = new Scanner(System.in);
     String instruction = "";
-    while (!Application.isCorrectFormat(instruction)) {
+    while (! isCorrectFormat(instruction)) {
       System.out.println("请输入正确指令");
       instruction = scanner.nextLine();
     }
-    
+
     switch (instruction.substring(0, 2)) {
       case "1.":
         Query.queryInfo(instruction, scanner);
