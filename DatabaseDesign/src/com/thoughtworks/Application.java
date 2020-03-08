@@ -137,6 +137,15 @@ public class Application {
         assert subjectList != null;
         subjectList.forEach(System.out::println);
         break;
+      case "1.2.3":
+        System.out.println("请输入教师名字");
+        teacherName = scanner.nextLine();
+        sql = "select id subjectId, subject_name subjectName, teacher teacherName " +
+          "from subject_info where teacher = ?";
+        subjectList = PreparedStatementQuery.queryInfoList(Subject.class, sql, teacherName);
+        assert subjectList != null;
+        subjectList.forEach(System.out::println);
+        break;
     }
   }
 
