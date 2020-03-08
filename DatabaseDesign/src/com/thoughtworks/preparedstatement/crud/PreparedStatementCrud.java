@@ -24,5 +24,4 @@ public class PreparedStatementCrud {
     JDBCUtils.closeResource(conn, ps);
   }
 
-
 }
