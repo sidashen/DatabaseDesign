@@ -10,8 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PreparedStatementQuery {
-
-  //多条记录
+  
   public static <T> List<T> queryInfoList(Class<T> clazz, String sql, Object... args) {
     Connection conn = null;
     PreparedStatement ps = null;
