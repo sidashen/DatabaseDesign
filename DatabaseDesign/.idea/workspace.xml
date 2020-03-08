@@ -43,7 +43,7 @@
       <recent name="com.thoughtworks.jdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PreparedStatementCrud.updateTest">
+  <component name="RunManager" selected="JUnit.PreparedStatementUpdate.updateTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.thoughtworks.Application" />
       <module name="DatabaseDesign" />
@@ -73,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PreparedStatementCrud.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PreparedStatementUpdate.updateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="DatabaseDesign" />
       <extension name="coverage">
         <pattern>
@@ -82,7 +82,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.thoughtworks.preparedstatement.crud" />
-      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.preparedstatement.crud.PreparedStatementCrud" />
+      <option name="MAIN_CLASS_NAME" value="com.thoughtworks.preparedstatement.crud.PreparedStatementUpdate" />
       <option name="METHOD_NAME" value="updateTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -91,7 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PreparedStatementCrud.updateTest" />
+        <item itemvalue="JUnit.PreparedStatementUpdate.updateTest" />
         <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.ConnectionTest.query" />
       </list>

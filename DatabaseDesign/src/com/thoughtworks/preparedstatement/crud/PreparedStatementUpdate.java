@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-public class PreparedStatementCrud {
+public class PreparedStatementUpdate {
 
   public void update(String sql, Object ...args) {//sql中占位符的个数与可变形参的长度一致
     Connection conn = null;
