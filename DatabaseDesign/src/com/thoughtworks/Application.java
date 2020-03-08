@@ -67,7 +67,8 @@ public class Application {
       instruction = scanner.nextLine();
     }
 
-    operation(instruction, scanner);
+    
+    queryInfo(instruction, scanner);
   }
 
   public static Boolean isCorrectFormat(String input) {
@@ -77,7 +78,7 @@ public class Application {
     return mat.find();
   }
 
-  public static void operation(String instruction, Scanner scanner) {
+  public static void queryInfo(String instruction, Scanner scanner) {
     switch (instruction) {
       case "1.1.1":
         String sql = "select id, name, age, gender from student_info";
@@ -102,8 +103,17 @@ public class Application {
           "where subject_id = (select id from subject_info where teacher = ?)";
         scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql, teacherName);
         scoreList.forEach(System.out::println);
+        break;
+      case "1.1.4":
+        System.out.println("请输入科目编号");
+        String subjectName = scanner.nextLine();
+        sql = "select student_id studentId, subject_id subjectId, student_name studentName, score " +
+              "from score_info where subject_id = ?";
+        scoreList = PreparedStatementQuery.queryInfoList(Score.class, sql, subjectName);
+        assert scoreList != null;
+        scoreList.forEach(System.out::println);
+        break;
     }
   }
-
 
 }

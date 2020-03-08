@@ -17,9 +17,8 @@ public class PreparedStatementQuery {
 
   @Test
   public void test() {
-    String sql = "select student_id studentId, score from score_info " +
-      "where subject_id = (select id from subject_info where teacher = ?)";
-    List<Score> list = queryInfoList(Score.class, sql, "王老师");
+    String sql = "select student_id studentId, subject_id subjectId, student_name studentName, score from score_info where subject_id = ?";
+    List<Score> list = queryInfoList(Score.class, sql, 1001);
     list.forEach(System.out::println);
   }
 
