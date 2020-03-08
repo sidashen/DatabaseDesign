@@ -1,10 +1,10 @@
 package com.thoughtworks.entities;
 
 public class Score {
-  int studentId;
-  int subjectId;
-  String studentName;
-  Float score;
+  private int studentId;
+  private int subjectId;
+  private String studentName;
+  private Float score;
 
   public Score() {
   }
@@ -16,6 +16,37 @@ public class Score {
     this.score = score;
   }
 
+  public int getStudentId() {
+    return studentId;
+  }
+
+  public void setStudentId(int studentId) {
+    this.studentId = studentId;
+  }
+
+  public int getSubjectId() {
+    return subjectId;
+  }
+
+  public void setSubjectId(int subjectId) {
+    this.subjectId = subjectId;
+  }
+
+  public String getStudentName() {
+    return studentName;
+  }
+
+  public void setStudentName(String studentName) {
+    this.studentName = studentName;
+  }
+
+  public Float getScore() {
+    return score;
+  }
+
+  public void setScore(Float score) {
+    this.score = score;
+  }
 
   @Override
   public String toString() {
