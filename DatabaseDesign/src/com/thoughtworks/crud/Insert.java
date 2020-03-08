@@ -37,6 +37,22 @@ public class Insert {
         } else {
           System.out.println("添加失败");
         }
+        break;
+      case "2.3":
+        System.out.println("请输入教师信息(例如：编号: 1001, 姓名: 小明, 年龄: 18, 性别: 男)：");
+        infoList = Arrays.asList(scanner.nextLine().split(","));
+        id = Integer.parseInt(infoList.get(0).substring(3));
+        name = infoList.get(1).substring(4);
+        age = Integer.parseInt(infoList.get(2).substring(4));
+        gender = infoList.get(3).substring(4);
+        sql = "insert into student_info values (?, ?, ?, ?)";
+        insertCount = PreparedStatementUpdate.update(sql, id, name, age, gender);
+        if (insertCount > 0) {
+          System.out.println("添加成功");
+        } else {
+          System.out.println("添加失败");
+        }
+        break;
     }
   }
 }
