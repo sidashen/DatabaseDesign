@@ -63,13 +63,6 @@ public class Manager {
       " 管理者年龄：" + this.age + " 管理者性别：" + this.gender;
   }
 
-  public static Boolean isCorrectFormat(String input) {
-    String rexp = "(\\d{1,4}\\.|\\d{1,4}\\.\\d{1,4}|\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})";
-    Pattern pat = Pattern.compile(rexp);
-    Matcher mat = pat.matcher(input);
-    return mat.find();
-  }
-
   public static void managerFunction() {
     System.out.println("您好，超级管理员，请选择你需要进行的操作：\n" +
       "1. 查询\n" +
@@ -119,4 +112,12 @@ public class Manager {
         Delete.deleteInfo(instruction, scanner);
     }
   }
+
+  public static Boolean isCorrectFormat(String input) {
+    String rexp = "(\\d{1,4}\\.|\\d{1,4}\\.\\d{1,4}|\\d{1,4}\\.\\d{1,4}\\.\\d{1,4})";
+    Pattern pat = Pattern.compile(rexp);
+    Matcher mat = pat.matcher(input);
+    return mat.find();
+  }
+
 }

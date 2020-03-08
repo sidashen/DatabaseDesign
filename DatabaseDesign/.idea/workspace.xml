@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25cde512-fbeb-4d99-ab02-0191ac938dc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/thoughtworks/crud/Delete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/crud/Insert.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/crud/Insert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/crud/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/crud/Update.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DatabaseDesign/com/thoughtworks/entities/Manager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/thoughtworks/entities/Manager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
