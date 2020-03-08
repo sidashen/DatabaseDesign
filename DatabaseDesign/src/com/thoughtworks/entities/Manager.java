@@ -1,5 +1,6 @@
 package com.thoughtworks.entities;
 
+import com.thoughtworks.crud.Delete;
 import com.thoughtworks.crud.Insert;
 import com.thoughtworks.crud.Query;
 import com.thoughtworks.crud.Update;
@@ -114,6 +115,8 @@ public class Manager {
         Insert.insertInfo(instruction, scanner);
       case "3.":
         Update.updateInfo(instruction, scanner);
+      case "4." :
+        Delete.deleteInfo(instruction, scanner);
     }
   }
 }
