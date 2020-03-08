@@ -1,8 +1,8 @@
 package com.thoughtworks.entities;
 
-import com.thoughtworks.Application;
 import com.thoughtworks.crud.Insert;
 import com.thoughtworks.crud.Query;
+import com.thoughtworks.crud.Update;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;
@@ -112,6 +112,8 @@ public class Manager {
       case "2.":
         Query.queryInfo(instruction, scanner);
         Insert.insertInfo(instruction, scanner);
+      case "3.":
+        Update.updateInfo(instruction, scanner);
     }
   }
 }
